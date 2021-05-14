@@ -51,24 +51,24 @@ namespace ConsoleApp2
             //}
             //Task 3
 
-            string str1 = Console.ReadLine();
-           
-            char[] Array = str1.ToCharArray();
-          
-            for (int i = 0; i < str1.Length; i++)
-            {
-                if (str1[i] <= 122 && str1[i] >= 97)
-                {
-                   Array[i] =char.ToUpper(Array[i]);
-                }
-                else if (str1[i] <= 90 && str1[i] >= 65)
-                {
-                    Array[i] = char.ToLower (Array[i]);
-                }
+            //string str1 = Console.ReadLine();
 
-            }
-          
-            Console.WriteLine(Array);
+            //char[] Array = str1.ToCharArray();
+
+            //for (int i = 0; i < str1.Length; i++)
+            //{
+            //    if (str1[i] <= 122 && str1[i] >= 97)
+            //    {
+            //       Array[i] =char.ToUpper(Array[i]);
+            //    }
+            //    else if (str1[i] <= 90 && str1[i] >= 65)
+            //    {
+            //        Array[i] = char.ToLower (Array[i]);
+            //    }
+
+            //}
+
+            //Console.WriteLine(Array);
             //Task 4
             //Console.WriteLine("Enter A");
             //int A=Convert.ToInt32(Console.ReadLine());
@@ -100,11 +100,10 @@ namespace ConsoleApp2
             //}
             //Task 5
 
-            //string num1 = Console.ReadLine();
-            //char[] charArray = num1.ToCharArray();
-            //Array.Reverse(charArray);
-            //num1 = new string(charArray);
-            //Console.WriteLine(num1);
+            string num1 = Console.ReadLine();
+           
+            string num2= new string( num1.Reverse().ToArray());
+            Console.WriteLine(num2);
 
         }
     }
